@@ -39,3 +39,9 @@ python auto_organize.py "demo_before" "demo_after" --mode copy
 ## ⚙️ Requirements
 
 Python 3.8+
+
+---
+
+## License
+
+MIT License. See `LICENSE`.
