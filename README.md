@@ -1,10 +1,10 @@
-# ⚙️ File Organization Automation (Python)
+# File Organization Automation (Python)
 
-> Automatically organize messy folders into clean structures (Docs, Images, Code, Archives, Others).
+Automatically organize mixed folders into clean, share-ready structures (Docs, Images, Code, Archives, Others).
 
-This small Python tool lets you take any messy folder and instantly sort it into organized subfolders by file type.
+## Overview
 
----
+This service classifies files by extension and copies or moves them into category folders for faster delivery and review.
 
 ## Visual Schema
 
@@ -31,43 +31,58 @@ This small Python tool lets you take any messy folder and instantly sort it into
 +-----------------------------+
 ```
 
----
+## Requirements
 
-## ▶️ Run
+- Python 3.8+
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+### Quickstart
 
 ```bash
 python auto_organize.py "demo_before" "demo_after" --mode copy
 ```
 
-- `--mode copy` keeps the original files
-- `--mode move` moves files into the organized folders
+- `--mode copy` keeps original files
+- `--mode move` moves files to destination
 
----
+## Input
 
-## 📁 Result
+- Source folder path (first positional argument)
+- Destination folder path (second positional argument)
+- Optional transfer mode (`--mode copy` or `--mode move`)
+
+## Output
+
+- Destination folder with grouped subfolders (`Docs`, `Images`, `Code`, `Archives`, `Others`)
+- Files ready for client review, packaging, or archiving
+
+## Example
 
 ### Before
+
 ![Before](before.png)
 
 ### After
+
 ![After](after.png)
 
----
+## Use Cases
 
-## 🧩 What this is useful for
+- Rapid cleanup of mixed delivery folders
+- Preparing handoff-ready folder structures
+- Reducing repetitive manual sorting effort
 
-- Messy Downloads folders
-- Project folders full of mixed files
-- Repetitive manual sorting
-- Preparing folders for sharing or archiving
+## Notes
 
----
-
-## ⚙️ Requirements
-
-Python 3.8+
-
----
+- The script processes only the source folder top level (`os.listdir`) and does not recurse into subfolders.
+- If a target filename already exists, copy/move follows default `shutil` behavior for that platform/path.
 
 ## License
 
