@@ -46,7 +46,7 @@ pip install -r requirements.txt
 ### Quickstart
 
 ```bash
-python auto_organize.py "demo_before" "demo_after" --mode copy
+python auto_organize.py "input_folder" "output_folder" --mode copy
 ```
 
 - `--mode copy` keeps original files
@@ -67,11 +67,11 @@ python auto_organize.py "demo_before" "demo_after" --mode copy
 
 ### Before
 
-![Before](before.png)
+![Before](example_before.png)
 
 ### After
 
-![After](after.png)
+![After](example_after.png)
 
 ## Use Cases
 
