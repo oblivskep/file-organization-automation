@@ -6,6 +6,33 @@ This small Python tool lets you take any messy folder and instantly sort it into
 
 ---
 
+## Visual Schema
+
+```text
++-----------------------------+
+| Input Folder (Unorganized)  |
++-----------------------------+
+              |
+              v
++-----------------------------+
+| auto_organize.py            |
+| mode: copy or move          |
++-----------------------------+
+              |
+              v
++-----------------------------+
+| File Type Classification    |
+| Docs / Images / Code / etc. |
++-----------------------------+
+              |
+              v
++-----------------------------+
+| Clean Output Folder         |
++-----------------------------+
+```
+
+---
+
 ## ▶️ Run
 
 ```bash
